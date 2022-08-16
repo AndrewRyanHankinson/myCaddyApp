@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">myCaddyApp</string>
+	<string name="title_Load_Course">Load Course"></string>
+    <string name="title_Range_Finder">Range Finder</string>
+    <string name="title_Scorecard">Scorecard</string>
+	<string name="mapkey">AIzaSyArg_aZJhzhi0iA0u04-Kq4MBmS5PYKPXc</string>
+</resources>

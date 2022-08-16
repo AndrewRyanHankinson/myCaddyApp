@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group>
+
+
+		<item
+			
+		android:id="@+id/weather_menu_option"
+		android:title="Check weather">
+		</item>
+
+		<item
+		android:id="@+id/directions_menu_option."
+		android:title="Directions to course">
+		</item>
+
+		<item
+		android:id="@+id/yardages_menu_option"
+		android:title="Yardages">
+		</item>
+
+		<item
+		android:id="@+id/logout_menu_option"
+		android:title="Logout">
+		</item>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</group>
+  
+</menu>
+
+<!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.top_nav_menu, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->

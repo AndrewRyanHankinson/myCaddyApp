@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+            
+        <!--Map-->
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment" 
+            />
+            
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:id="@+id/placeLayout"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            
+            <ImageView
+                android:accessibilityHeading="@+id/blueball"
+                android:src="@drawable/blueball"
+                android:layout_centerVertical="true"
+                android:id="@+id/blueball"
+                android:layout_width="6dp"
+                android:layout_height="6dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/placeTextView"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/blueball"
+                android:text="Where is the course?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            
+            
+            </TextView>
+
+        
+        
+        
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/centerMarker"
+            android:src="@drawable/center_marker"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageView>
+
+        <ImageButton
+            android:background="@drawable/roundedges"
+            android:id="@+id/locationButton"
+            android:tint="@android:color/holo_green_dark"
+            android:src="@drawable/place"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </ImageButton>
+
+        <Button
+            android:layout_marginBottom="40dp"
+            android:id="@+id/getDirectionsButton"
+            android:textAllCaps="false"
+            android:background="@drawable/roundbutton"
+            
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/direction"
+            android:layout_gravity="center|bottom"
+            android:text="Get directions to course"
+            android:visibility="visible"
+            android:layout_width="250dp"
+            android:layout_height="55dp">
+        
+        </Button>
+
+
+
+
+
+
+
+    </FrameLayout>>
+
+       
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
